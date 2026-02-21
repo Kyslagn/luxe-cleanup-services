@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Luxe Cleanup Services | Katy & Houston Luxury Cleaning</title>
+<meta name="description" content="Luxury-level move-in/move-out, deep, post-construction, and office cleaning in Katy & Houston. Free estimates." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --gold:#D6B15E;
+  --gold2:#b88a33;
+  --dark:#07070a;
+  --panel: rgba(14,14,18,.72);
+  --panel2: rgba(14,14,18,.55);
+  --text:#F5F5F5;
+  --muted:#C7C7CF;
+  --border: rgba(255,255,255,.10);
+  --shadow: 0 18px 60px rgba(0,0,0,.55);
+}
+*{box-sizing:border-box; margin:0; padding:0;}
+html,body{height:100%;}
+body{
+  font-family:Poppins, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  color:var(--text);
+  background: var(--dark);
+}
+a{color:inherit; text-decoration:none}
+.container{max-width:1150px; margin:0 auto; padding:18px;}
+
+/* Sticky header */
+header{
+  position: sticky;
+  top: 12px;
+  z-index: 50;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:14px;
+  padding:14px 14px;
+  border-radius:18px;
+  border:1px solid var(--border);
+  background: rgba(10,10,12,.62);
+  backdrop-filter: blur(14px);
+  box-shadow: 0 10px 28px rgba(0,0,0,.35);
+}
+.brand{display:flex; align-items:center; gap:12px; min-width:0;}
+.brand img{height:62px; width:auto; filter: drop-shadow(0 16px 44px rgba(214,177,94,.35));}
+nav{display:none; gap:18px; font-weight:700;}
+nav a{color:rgba(245,245,245,.78); font-size:14px;}
+nav a:hover{color:var(--text);}
+
+.btn{
+  background:linear-gradient(135deg,var(--gold),var(--gold2));
+  border:1px solid rgba(214,177,94,.35);
+  padding:12px 18px;
+  border-radius:999px;
+  font-weight:800;
+  color:#1a1405;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  box-shadow:0 12px 40px rgba(214,177,94,.28);
+  transition:.2s;
+  white-space:nowrap;
+}
+.btn:hover{transform:translateY(-2px); filter:brightness(1.05);}
+.btn.secondary{
+  background: rgba(0,0,0,.18);
+  border:1px solid var(--border);
+  color:var(--text);
+  box-shadow:none;
+}
+
+/* Hero with image background */
+.hero-wrap{
+  margin-top:14px;
+  border-radius:26px;
+  overflow:hidden;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+  background:
+    linear-gradient(180deg, rgba(7,7,10,.30), rgba(7,7,10,.92)),
+    url("hero-bg.jpg") center/cover no-repeat;
+}
+.hero{
+  display:grid;
+  grid-template-columns: 1fr;
+  gap:16px;
+  padding: 28px 18px 18px;
+}
+.hero h1{
+  font-family:"Playfair Display", serif;
+  font-size: clamp(34px, 7vw, 64px);
+  line-height: 1.05;
+}
+.hero h1 span{color:var(--gold);}
+.hero p{color: rgba(245,245,245,.82); max-width: 70ch; margin-top:10px;}
+.hero .cta{display:flex; flex-wrap:wrap; gap:10px; margin-top:16px;}
+
+.pills{display:flex; flex-wrap:wrap; gap:10px; margin-top:16px;}
+.pill{
+  padding:9px 12px;
+  border-radius:999px;
+  border:1px solid rgba(255,255,255,.12);
+  background: rgba(0,0,0,.18);
+  color: rgba(245,245,245,.82);
+  font-weight:700;
+  font-size:13px;
+}
+
+/* Panels */
+.panel{
+  background: var(--panel);
+  border:1px solid var(--border);
+  border-radius:20px;
+  padding:16px;
+}
+.small{color: var(--muted); font-size:13px;}
+.form{display:grid; gap:10px; margin-top:10px;}
+input,textarea{
+  width:100%;
+  padding:12px 12px;
+  border-radius:14px;
+  border:1px solid rgba(255,255,255,.10);
+  background: rgba(0,0,0,.22);
+  color: var(--text);
+  outline:none;
+  font-size:14px;
+}
+textarea{min-height:110px; resize:vertical;}
+
+/* Section with subtle texture */
+.section{
+  margin-top:22px;
+  padding: 26px 0;
+  background:
+    radial-gradient(900px 420px at 18% 0%, rgba(214,177,94,.10), transparent 60%),
+    linear-gradient(180deg, rgba(7,7,10,0), rgba(7,7,10,1)),
+    url("section-texture.jpg") center/cover no-repeat;
+  background-blend-mode: screen, normal, overlay;
+}
+.section-title{text-align:center; font-size:28px; font-weight:800; margin-bottom:18px;}
+.cards{display:grid; grid-template-columns: 1fr; gap:12px;}
+.card{
+  background: var(--panel2);
+  border:1px solid var(--border);
+  border-radius:20px;
+  padding:16px;
+}
+.card h3{margin-bottom:8px; font-size:16px;}
+.card p{color: var(--muted); font-size:14px;}
+
+footer{
+  margin-top:26px;
+  padding: 26px 0 44px;
+  border-top:1px solid rgba(255,255,255,.10);
+  text-align:center;
+  color: var(--muted);
+  font-size:13px;
+}
+
+@media (min-width: 900px){
+  .container{padding:22px;}
+  nav{display:flex;}
+  .brand img{height:76px;}
+  .hero{grid-template-columns: 1.05fr .95fr; padding: 44px 34px 34px;}
+  .panel{padding:18px;}
+  .cards{grid-template-columns: repeat(4, 1fr);}
+}
+</style>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <a class="brand" href="#top" aria-label="Luxe home">
+        <img src="logo.png" alt="Luxe Cleanup Services logo" />
+      </a>
+
+      <nav aria-label="Primary">
+        <a href="#services">Services</a>
+        <a href="#why">Why Us</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <a class="btn" href="tel:+13463794667">Call / Text</a>
+    </header>
+
+    <main id="top">
+      <div class="hero-wrap">
+        <section class="hero">
+          <div>
+            <div class="panel" style="background: rgba(0,0,0,.18);">
+              <div class="small" style="font-weight:800; letter-spacing:.12em; text-transform:uppercase;">
+                Katy • Houston • Luxury Cleaning
+              </div>
+              <h1 style="margin-top:10px;">Luxury cleaning for <span>every space</span>.</h1>
+              <p>
+                Move‑in/move‑out, deep cleaning, post‑construction, and premium office cleaning in <strong>Katy & Houston</strong>.
+                We deliver detail, polish, and reliability — no storefront needed.
+              </p>
+
+              <div class="cta">
+                <a class="btn" href="tel:+13463794667">Call / Text Now</a>
+                <a class="btn secondary" href="mailto:youremail@gmail.com?subject=Free%20Cleaning%20Estimate%20Request">Email for Estimate</a>
+                <a class="btn secondary" href="#contact">Get a Free Quote</a>
+              </div>
+
+              <div class="pills">
+                <div class="pill">✔ Free Estimates</div>
+                <div class="pill">✔ Premium Detail</div>
+                <div class="pill">✔ Residential & Commercial</div>
+                <div class="pill">📍 Katy • Houston • Surrounding Areas</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel" id="contact">
+            <div class="small" style="font-weight:900; letter-spacing:.14em; text-transform:uppercase;">Fast Quote</div>
+            <div style="font-size:18px; font-weight:800; margin-top:6px;">Tell us what you need</div>
+            <div class="small" style="margin-top:6px;">This opens your email app. We can upgrade to an online form anytime.</div>
+
+            <form class="form" action="mailto:youremail@gmail.com" method="post" enctype="text/plain">
+              <input name="Name" placeholder="Your name" required />
+              <input name="Phone" placeholder="Phone number" />
+              <input name="City" placeholder="City (Katy, Houston, etc.)" />
+              <input name="Service" placeholder="Service (Move-out, Deep clean, Office, etc.)" />
+              <textarea name="Details" placeholder="Tell us the size of the space + what you need cleaned"></textarea>
+              <button class="btn" type="submit" style="width:100%;">Request Estimate</button>
+            </form>
+
+            <div style="margin-top:14px;">
+              <div class="small">Phone</div>
+              <div style="font-weight:800; color:var(--gold);">+1 (346) 379-4667</div>
+              <div class="small" style="margin-top:10px;">Email</div>
+              <div style="font-weight:800; color:var(--gold);">youremail@gmail.com</div>
+              <div class="small" style="margin-top:10px;">Service Area</div>
+              <div class="small">Katy • Houston • Cypress • Richmond • Fulshear (and nearby)</div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <section class="section" id="services">
+        <h2 class="section-title">Our Services</h2>
+        <div class="cards">
+          <div class="card"><h3>Move‑In / Move‑Out</h3><p>Perfect resets for homes, apartments & rentals.</p></div>
+          <div class="card"><h3>Deep Cleaning</h3><p>Detail‑focused top‑to‑bottom cleaning.</p></div>
+          <div class="card"><h3>Post‑Construction</h3><p>Dust removal, wipe‑down, vacuum, and finishing touches.</p></div>
+          <div class="card"><h3>Office Cleaning</h3><p>Professional workspace maintenance (weekly/bi‑weekly).</p></div>
+        </div>
+      </section>
+
+      <section class="section" id="why">
+        <h2 class="section-title">Why Luxe</h2>
+        <div class="cards">
+          <div class="card"><h3>Luxury‑level detail</h3><p>We don’t rush. We finish like pros.</p></div>
+          <div class="card"><h3>Reliable communication</h3><p>Clear updates, easy scheduling, no surprises.</p></div>
+          <div class="card"><h3>Great for property managers</h3><p>Turn‑ready results for rentals and new builds.</p></div>
+          <div class="card"><h3>Service‑area business</h3><p>No public business address needed.</p></div>
+        </div>
+      </section>
+
+      <footer>
+        © <span id="y"></span> Luxe Cleanup Services • Katy & Houston
+      </footer>
+    </main>
+  </div>
+
+<script>
+document.getElementById("y").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
