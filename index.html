@@ -260,14 +260,22 @@ footer{
             <div style="font-size:18px; font-weight:800; margin-top:6px;">Tell us what you need</div>
             <div class="small" style="margin-top:6px;">This opens your email app. We can upgrade to an online form anytime.</div>
 
-            <form class="form" action="mailto:info@luxecleanupservices.com?subject=Fast%20Quote%20Request" method="post" enctype="text/plain">
-              <input name="Name" placeholder="Your name" required />
-              <input name="Phone" placeholder="Phone number" />
-              <input name="City" placeholder="City (Katy, Houston, etc.)" />
-              <input name="Service" placeholder="Service (Move-out, Deep clean, Office, etc.)" />
-              <textarea name="Details" placeholder="Tell us the size of the space + what you need cleaned"></textarea>
-              <button class="btn" type="submit" style="width:100%;">Request Estimate</button>
-            </form>
+            <form action="https://formspree.io/f/mgolpblb" method="POST">
+
+  <input type="text" name="first_name" placeholder="First Name" required>
+
+  <input type="text" name="last_name" placeholder="Last Name" required>
+
+  <input type="email" name="email" placeholder="Email Address" required>
+
+  <input type="tel" name="phone" placeholder="Phone Number" required>
+
+  <textarea name="message" placeholder="Tell us about the property (size, cleaning type, move-in/out, etc.)" required></textarea>
+
+  <button type="submit">Get My Free Quote</button>
+
+</form>
+
 
             <div style="margin-top:14px;">
               <div class="small">Phone</div>
